@@ -2,7 +2,7 @@ FROM tomcat
 
 RUN cp -R /usr/local/tomcat/webapps.dist/. /usr/local/tomcat/webapps/
 
-ADD SampleWebApp.war /usr/local/tomcat/webapps/
+ADD /dest/SampleWebApp.war /usr/local/tomcat/webapps/
 
 RUN cd /usr/local/tomcat/
 
